@@ -1,0 +1,28 @@
+{
+  "name": "mongjoy/ali-oss-storage",
+  "description": "aliyun oss filesystem storage for laravel 5+",
+  "keywords": ["aliyun", "oss", "laravel", "filesystems", "storage"],
+  "homepage": "https://github.com/mongjoy/Ali-oss-storage",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "mongjoy",
+      "email": "mongjoy@163.com"
+    }
+  ],
+  "require": {
+    "aliyuncs/oss-sdk-php": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mongjoy\\AliOSS\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mongjoy\\AliOSS\\AliOssServiceProvider"
+      ]
+    }
+  }
+}
